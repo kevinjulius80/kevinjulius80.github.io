@@ -5,94 +5,708 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kevin Julius Dwi Saputra | Full Stack Developer</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <h1>Kevin Julius Dwi Saputra</h1>
-    <p class="headline">
-      Full Stack Developer | Web & API Integration Specialist
-    </p>
-    <p class="contact">
-      📍 Bojonegoro, Indonesia · 
-      📧 kevinjulius22@gmail.com · 
-      <a href="https://www.linkedin.com/in/kevin-julius-dwi-saputra-25873134b/" target="_blank">LinkedIn</a>
-    </p>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">KJ</div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#api" class="nav-link">API Integration</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Kevin Julius Dwi Saputra</h1>
+        <p class="hero-title">
+          <span class="typing-text">Full Stack Developer</span>
+        </p>
+        <p class="hero-subtitle">
+          Building scalable web applications and API integrations for government and enterprise solutions
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-envelope"></i> Get In Touch
+          </a>
+          <a href="https://www.linkedin.com/in/kevin-julius-dwi-saputra-25873134b/" target="_blank" class="btn btn-secondary">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="mailto:kejujulius@gmail.com" class="social-link" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/kevin-julius-dwi-saputra-25873134b/" target="_blank" class="social-link" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/kevinjulius80" target="_blank" class="social-link" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="avatar-container">
+          <div class="avatar-circle"></div>
+          <i class="fas fa-code code-icon"></i>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am a Full Stack Developer with experience building scalable web and mobile applications.
-      I work across frontend and backend, focusing on API integration, system performance,
-      and clean, maintainable code. I enjoy building practical solutions that solve real business problems.
-    </p>
-  </section>
-
-  <section>
-    <h2>Experience</h2>
-
-    <div class="job">
-      <h3>Full Stack Engineer – PT. Informasi Teknologi Indonesia</h3>
-      <span>Apr 2022 – Present</span>
-      <ul>
-        <li>Developed web applications and backend APIs for business automation and e-commerce</li>
-        <li>Built WhatsApp Broadcast API for automated customer communication</li>
-        <li>Integrated internal systems with Meta APIs</li>
-        <li>Developed e-commerce and online sales platforms with payment gateway</li>
-        <li>Designed quotation management system for client proposals</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <h3>Full Stack Engineer – PT. Alfahuma Rekayasa Teknologi</h3>
-      <span>Mar 2018 – Mar 2022</span>
-      <ul>
-        <li>Developed web and Android applications for government and public services</li>
-        <li>Built inventory management and data portal systems</li>
-        <li>Developed national agricultural aid distribution system</li>
-        <li>Created Android apps using GPS and location-based services</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <h3>Full Stack Engineer – PT. Media Signage Indonesia</h3>
-      <span>Jul 2017 – Mar 2018</span>
-      <ul>
-        <li>Developed queue management system for public health centers</li>
-        <li>Built Android satisfaction survey app</li>
-        <li>Created web-based reporting dashboard</li>
-      </ul>
+  <!-- ABOUT -->
+  <section id="about" class="section-about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Introduction</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="lead">
+            I am a Full Stack Developer with <strong>8+ years of experience</strong> building web and mobile applications
+            for government institutions, enterprises, and public services.
+          </p>
+          <p>
+            I work across backend and frontend with a strong focus on API integration,
+            database design, and system performance. My expertise spans from building
+            complex enterprise systems to developing customer-facing applications.
+          </p>
+          <p>
+            I enjoy building scalable, maintainable systems that solve real business problems
+            and improve operational efficiency.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <i class="fas fa-briefcase stat-icon"></i>
+            <h3>8+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-project-diagram stat-icon"></i>
+            <h3>50+</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-card">
+            <i class="fas fa-code stat-icon"></i>
+            <h3>10+</h3>
+            <p>Technologies</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section>
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>Java</span>
-      <span>Spring Boot</span>
-      <span>PHP</span>
-      <span>Laravel</span>
-      <span>CodeIgniter</span>
-      <span>React.js</span>
-      <span>Vue.js</span>
-      <span>JavaScript</span>
-      <span>MySQL</span>
-      <span>PostgreSQL</span>
-      <span>MongoDB</span>
-      <span>RabbitMQ</span>
-      <span>Git</span>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section-experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Career Path</span>
+        <h2 class="section-title">Professional Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="job-header">
+              <div>
+                <h3 class="job-title">Full Stack Engineer</h3>
+                <p class="job-company"><i class="fas fa-building"></i> PT. Informasi Teknologi Indonesia</p>
+              </div>
+              <span class="job-date"><i class="far fa-calendar"></i> Apr 2022 – Present</span>
+            </div>
+            <ul class="job-achievements">
+              <li><i class="fas fa-check-circle"></i> Developed web applications and backend APIs for business automation and e-commerce</li>
+              <li><i class="fas fa-check-circle"></i> Built WhatsApp Broadcast API for automated customer communication</li>
+              <li><i class="fas fa-check-circle"></i> Integrated internal systems with Meta APIs</li>
+              <li><i class="fas fa-check-circle"></i> Developed e-commerce and online sales platforms with payment gateway integration</li>
+              <li><i class="fas fa-check-circle"></i> Designed and implemented quotation management systems</li>
+            </ul>
+            <div class="job-tags">
+              <span class="tag">Spring Boot</span>
+              <span class="tag">React.js</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">ActiveMQ</span>
+              <span class="tag">API Integration</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="job-header">
+              <div>
+                <h3 class="job-title">Full Stack Engineer</h3>
+                <p class="job-company"><i class="fas fa-building"></i> PT. Alfahuma Rekayasa Teknologi</p>
+              </div>
+              <span class="job-date"><i class="far fa-calendar"></i> Mar 2018 – Mar 2022</span>
+            </div>
+            <ul class="job-achievements">
+              <li><i class="fas fa-check-circle"></i> Developed web and Android applications for government and public services</li>
+              <li><i class="fas fa-check-circle"></i> Built inventory management and data portal systems</li>
+              <li><i class="fas fa-check-circle"></i> Developed national agricultural aid distribution systems</li>
+              <li><i class="fas fa-check-circle"></i> Created Android applications using GPS and location-based services</li>
+            </ul>
+            <div class="job-tags">
+              <span class="tag">Laravel</span>
+              <span class="tag">CodeIgniter</span>
+              <span class="tag">Android</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">GPS</span>
+              <span class="tag">PHP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="job-header">
+              <div>
+                <h3 class="job-title">Full Stack Engineer</h3>
+                <p class="job-company"><i class="fas fa-building"></i> PT. Media Signage Indonesia</p>
+              </div>
+              <span class="job-date"><i class="far fa-calendar"></i> Jul 2017 – Mar 2018</span>
+            </div>
+            <ul class="job-achievements">
+              <li><i class="fas fa-check-circle"></i> Developed queue management systems for public health centers</li>
+              <li><i class="fas fa-check-circle"></i> Built Android-based satisfaction survey applications</li>
+              <li><i class="fas fa-check-circle"></i> Created web dashboards for monitoring and reporting</li>
+            </ul>
+            <div class="job-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">Android</span>
+              <span class="tag">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="job-header">
+              <div>
+                <h3 class="job-title">Intern </h3>
+                <p class="job-company"><i class="fas fa-building"></i> Cv. Karya Hidup Sentosa</p>
+              </div>
+              <span class="job-date"><i class="far fa-calendar"></i> May 2015 – Jun 2016</span>
+            </div>
+            <ul class="job-achievements">
+              <li><i class="fas fa-check-circle"></i> Developed interactive forms and custom queries in Oracle for reporting purposes.</li>
+              <li><i class="fas fa-check-circle"></i> Skilled in building userfriendly Oracle Forms to streamline data input and management. Also experienced in writing 
+optimized SQL queries to generate accurate and insightful reports, supporting business decisionmaking processes.</li>
+            </ul>
+            <div class="job-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">Oracle</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section>
-    <h2>Education</h2>
-    <p><strong>Bachelor of Information Technology</strong> – ITB ASIA Malang</p>
+  <!-- PROJECTS -->
+  <section id="projects" class="section-projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">Selected Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Aplikasi Pengolahan Data – Assessment BKN</h3>
+          <p>
+            Web-based data processing application for government assessment purposes,
+            focusing on structured data input, validation, and reporting.
+          </p>
+          <div class="project-tags">
+            <span class="tag-small">Web App</span>
+            <span class="tag-small">Government</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <h3>Aplikasi BAST & BANPEM 2021 – Kementerian Pertanian</h3>
+          <p>
+            System for managing government aid distribution and BAST documentation,
+            improving transparency and administrative efficiency.
+          </p>
+          <div class="project-tags">
+            <span class="tag-small">Document Management</span>
+            <span class="tag-small">Distribution</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Aplikasi DUPAK Pleno – Kementerian Pertanian</h3>
+          <p>
+            Digital system supporting employee credit score assessment and evaluation processes.
+          </p>
+          <div class="project-tags">
+            <span class="tag-small">Assessment</span>
+            <span class="tag-small">HR System</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Aplikasi ASMANTER – MPR RI</h3>
+          <p>
+            Android-based attendance and task management application for security staff,
+            integrated with backend APIs for real-time monitoring.
+          </p>
+          <div class="project-tags">
+            <span class="tag-small">Android</span>
+            <span class="tag-small">Real-time</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Aplikasi Bengmob</h3>
+          <p>
+            Android-based to find a nearby automotive workshop service with real-time
+            location tracking and service booking features.
+          </p>
+          <div class="project-tags">
+            <span class="tag-small">Android</span>
+            <span class="tag-small">Real-time</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3>Website PPID & JDIH Kabupaten Subang</h3>
+          <p>
+            Public information and legal documentation websites supporting transparency
+            and structured document management.
+          </p>
+          <div class="project-tags">
+            <span class="tag-small">Public Portal</span>
+            <span class="tag-small">CMS</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-box"></i>
+          </div>
+          <h3>Aplikasi Manajemen Aset – Kementerian Pertanian</h3>
+          <p>
+            Web-based asset management system for centralized tracking, monitoring,
+            and reporting.
+          </p>
+          <div class="project-tags">
+            <span class="tag-small">Asset Management</span>
+            <span class="tag-small">Enterprise</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-store"></i>
+          </div>
+          <h3>Company & Commercial Websites</h3>
+          <p>
+            Developed multiple company profile and informational websites including
+            Westerindo, CPRO, Kehati PLN UP Cirata, and Berandatoko.
+          </p>
+          <div class="project-tags">
+            <span class="tag-small">Corporate</span>
+            <span class="tag-small">E-commerce</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2026 Kevin Julius Dwi Saputra</p>
+  <!-- API INTEGRATION -->
+  <section id="api" class="section-api">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Expertise</span>
+        <h2 class="section-title">API Integration & Development</h2>
+        <p class="section-subtitle">Specialized in building and integrating APIs for seamless system communication</p>
+      </div>
+
+      <div class="api-content">
+        <div class="api-overview">
+          <div class="api-intro">
+            <h3><i class="fas fa-network-wired"></i> API Development Expertise</h3>
+            <p>
+              With extensive experience in API design and integration, I've successfully connected
+              multiple systems, platforms, and services to create unified, efficient solutions.
+              My approach focuses on scalability, security, and reliability.
+            </p>
+          </div>
+
+          <div class="api-grid">
+            <div class="api-card">
+              <div class="api-card-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h4>RESTful API Development</h4>
+              <p>Designed and built REST APIs following best practices with proper endpoint structure, HTTP methods, and status codes.</p>
+              <div class="api-tech">
+                <span>Spring Boot</span>
+                <span>Laravel</span>
+              </div>
+            </div>
+
+            <div class="api-card">
+              <div class="api-card-icon">
+                <i class="fas fa-comments"></i>
+              </div>
+              <h4>WhatsApp API Integration</h4>
+              <p>Developed automated broadcast systems using WhatsApp Business API for customer communication and notifications.</p>
+              <div class="api-tech">
+                <span>Meta API</span>
+                <span>Webhooks</span>
+                <span>Message Queue</span>
+              </div>
+            </div>
+
+            <div class="api-card">
+              <div class="api-card-icon">
+                <i class="fas fa-exchange-alt"></i>
+              </div>
+              <h4>Message Queues</h4>
+              <p>Implemented asynchronous communication using message queues for reliable, scalable distributed systems.</p>
+              <div class="api-tech">
+                <span>RabbitMQ</span>
+                <span>ActiveMQ</span>
+                <span>ArtemisMQ</span>
+              </div>
+            </div>
+
+            <div class="api-card">
+              <div class="api-card-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h4>API Security</h4>
+              <p>Implemented authentication, authorization, rate limiting, and encryption for secure API communication.</p>
+              <div class="api-tech">
+                <span>JWT</span>
+                <span>OAuth 2.0</span>
+                <span>API Keys</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="api-features">
+          <h3><i class="fas fa-check-double"></i> Key Capabilities</h3>
+          <div class="features-grid">
+            <div class="feature-item">
+              <i class="fas fa-file-code"></i>
+              <div>
+                <h4>API Documentation</h4>
+                <p>Creating comprehensive API docs using Swagger/OpenAPI</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-vial"></i>
+              <div>
+                <h4>API Testing</h4>
+                <p>Unit testing, integration testing with Postman & JUnit</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-tachometer-alt"></i>
+              <div>
+                <h4>Performance Optimization</h4>
+                <p>Caching, pagination, and query optimization</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-chart-line"></i>
+              <div>
+                <h4>API Monitoring</h4>
+                <p>Logging, error tracking, and performance monitoring</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section-skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Expertise</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+
+      <div class="skills-container">
+        <div class="skill-category">
+          <div class="category-icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3>Backend</h3>
+          <div class="skill-items">
+            <span class="skill-badge"><i class="fab fa-java"></i> Java</span>
+            <span class="skill-badge"><i class="fas fa-leaf"></i> Spring Boot</span>
+            <span class="skill-badge"><i class="fab fa-php"></i> PHP</span>
+            <span class="skill-badge"><i class="fab fa-laravel"></i> Laravel</span>
+            <span class="skill-badge"><i class="fas fa-fire"></i> CodeIgniter</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Frontend</h3>
+          <div class="skill-items">
+            <span class="skill-badge"><i class="fab fa-react"></i> React.js</span>
+            <span class="skill-badge"><i class="fab fa-vuejs"></i> Vue.js</span>
+            <span class="skill-badge"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="skill-badge"><i class="fab fa-html5"></i> HTML/CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Database</h3>
+          <div class="skill-items">
+            <span class="skill-badge"><i class="fas fa-database"></i> MySQL</span>
+            <span class="skill-badge"><i class="fas fa-database"></i> PostgreSQL</span>
+            <span class="skill-badge"><i class="fas fa-database"></i> MongoDB</span>
+            <span class="skill-badge"><i class="fas fa-database"></i> Oracle</span>
+            <span class="skill-badge"><i class="fas fa-hdd"></i> Redis</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>Tools & Others</h3>
+          <div class="skill-items">
+            <span class="skill-badge"><i class="fas fa-exchange-alt"></i> RabbitMQ</span>
+            <span class="skill-badge"><i class="fas fa-exchange-alt"></i> ActiveMQ</span>
+            <span class="skill-badge"><i class="fas fa-exchange-alt"></i> ArtemisMQ</span>
+            <span class="skill-badge"><i class="fab fa-android"></i> Android</span>
+            <span class="skill-badge"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="skill-badge"><i class="fas fa-plug"></i> REST API</span>
+            <span class="skill-badge"><i class="fas fa-check-circle"></i> SonarQube</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section-education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Academic Background</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="education-card">
+        <div class="education-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="education-content">
+          <h3>High School Diploma</h3>
+          <p class="education-school"><i class="fas fa-university"></i> SMK PGRI 03 Malang</p>
+        </div>
+      </div>
+      <div class="education-card">
+        <div class="education-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="education-content">
+          <h3>Bachelor of Information Technology</h3>
+          <p class="education-school"><i class="fas fa-university"></i> Institut Teknologi & Bisnis ASIA Malang</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-subtitle">I'm always interested in hearing about new projects and opportunities.</p>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:kejujulius@gmail.com" class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>kejujulius@gmail.com</p>
+        </a>
+        <a href="https://www.linkedin.com/in/kevin-julius-dwi-saputra-25873134b/" target="_blank" class="contact-card">
+          <i class="fab fa-linkedin"></i>
+          <h3>LinkedIn</h3>
+          <p>Connect with me</p>
+        </a>
+        <div class="contact-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Location</h3>
+          <p>Bojonegoro, Indonesia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Kevin Julius Dwi Saputra. Built with passion and code.</p>
+      <div class="footer-social">
+        <a href="mailto:kejujulius@gmail.com" class="footer-link"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/kevin-julius-dwi-saputra-25873134b/" target="_blank" class="footer-link"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/kevinjulius80" target="_blank" class="footer-link"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    
+    // Check for saved theme preference or default to 'light'
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', currentTheme);
+    updateThemeIcon(currentTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const theme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      html.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      updateThemeIcon(theme);
+    });
+
+    function updateThemeIcon(theme) {
+      const icon = themeToggle.querySelector('i');
+      icon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+    }
+
+    // Navbar background on scroll
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Active navigation on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+
+    function setActiveNav() {
+      let current = '';
+      const scrollY = window.pageYOffset;
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+          current = sectionId;
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', setActiveNav);
+    setActiveNav(); // Set initial active state
+
+    // Fade-in animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('section, .project-card, .timeline-item, .skill-category').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(el);
+    });
+  </script>
 
 </body>
 </html>
